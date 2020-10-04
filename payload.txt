@@ -1,0 +1,7 @@
+email, mail@example.com
+first_name, first_name
+last_name, last_name
+phone, 555-555-5555
+company, company_name
+tags, api-test
+ip4, 127.0.0.1
