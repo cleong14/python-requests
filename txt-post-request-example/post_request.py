@@ -6,7 +6,7 @@ from requests import request
 # build the url request from a txt file
 url_dict = {}
 
-with open('post-url-endpoint.txt') as url_file:
+with open('txt-post-request-example/post-url-endpoint.txt') as url_file:
     for line in url_file:
         (key,val) = line.rstrip().split(', ')
         url_dict[key] = val
@@ -16,7 +16,7 @@ url = url_dict['hostname_path'] + '?post_endpoint=' + url_dict['post_endpoint'] 
 # build the payload
 payload_dict = {}
 
-with open('payload.txt') as payload_file:
+with open('txt-post-request-example/payload.txt') as payload_file:
     for line in payload_file:
         (key,val) = line.rstrip().split(', ')
         payload_dict[key] = val
@@ -24,7 +24,7 @@ with open('payload.txt') as payload_file:
 # build the request header
 header_dict = {}
 
-with open('header.txt') as header_file:
+with open('txt-post-request-example/header.txt') as header_file:
     for line in header_file:
         (key,val) = line.rstrip().split(', ')
         header_dict[key] = val
